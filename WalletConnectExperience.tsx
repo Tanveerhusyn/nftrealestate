@@ -30,6 +30,7 @@ export default function WalletConnectExperience() {
 
   return (
     <>
+    <Text style ={styles.title}>Welcome to Real Estate Marketplaces</Text>
       {!connector.connected ? (
         <Button onPress={connectWallet} label="Connect a wallet" />
       ) : (
@@ -55,4 +56,8 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: "600",
   },
+
+  title:{
+    color:'black'
+  }
 });
